@@ -1,0 +1,117 @@
+﻿@model IEnumerable<MVC_BLL.Models.Billing>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@{
+	List<DateTime> dateOptions = new List<DateTime>();
+	dateOptions.Add(DateTime.Now.AddDays(5));
+	dateOptions.Add(DateTime.Now.AddDays(10));
+	dateOptions.Add(DateTime.Now.AddDays(15));
+	dateOptions.Add(DateTime.Now.AddDays(20));
+	DateTime dateSelected = DateTime.Now;
+}
+<p>
+	<a asp-action="Add">Generate a New Bill</a>
+</p>
+
+<form method="get">
+	<div class="form-group">
+		<label  class="control-label">Appointment Type</label>
+		<select id="selectedOption" class="form-control" name="noDays">
+			<option value="5">Next 5 days</option>
+			<option value="10">Next 10 days</option>
+			<option value="15">Next 15 days</option>
+		</select>
+		<input type="submit" value="Filtro"/>
+	</div>
+
+	<button type="button" class="btn btn-primary" onclick="showSelectedDate()">Show Selected Date</button>
+</form>
+
+<p id="selectedDate"></p>
+
+<script>
+	function showSelectedDate() {
+		var selectedValue = document.getElementById("selectedOption").value;
+
+		if (selectedValue == "Next 5 days") {
+	@{
+		dateSelected = dateOptions[0];
+	}
+		}
+
+		
+
+		if (selectedValue == "Next 10 days") {
+	@{
+		dateSelected = dateOptions[1];
+	}
+		}
+
+		if (selectedValue == "Next 15 days") {
+	@{
+		dateSelected = dateOptions[2];
+	}
+		}
+		var storedDateSelected = localStorage.getItem("dateSelected"); // Retrieve the stored value
+		
+	}
+</script>
+
+
+
+@{
+	decimal totalAmount = 0;
+	decimal totalIsPaid = 0;
+
+	if (Model.Count() == 0)
+	{
+		<h2 style="color: green;" align="center">There are no bills</h2>
+	}
+	else
+	{
+		<h2 style="color: green;">Paid Bills</h2>
+		int i = 0;
+		@foreach (var bill in Model)
+		{
+			if (bill.Status == "Paid")
+			{
+				<partial name="_BillDetailsPartialView" model="bill" />
+				i++;
+			}
+
+		}
+		if (i == 0)
+		{
+			<h2 align="center">There are no paid bills</h2>
+		}
+		i = 0;
+		<h2 style="color: red">Not Paid</h2>
+		@foreach (var bill in Model)
+		{
+			if (bill.Status == "Not Paid")
+			{
+				<partial name="_BillDetailsPartialView" model="bill" />
+				totalAmount += bill.Amount;
+				i++;
+			}
+			totalIsPaid += bill.Amount;
+
+		}
+		if (i == 0)
+		{
+			<h2 align="center">There are no unpaid bills</h2>
+		}
+		<div style="text-align: right;">
+			<h4>Total amount to be paid: <span style="font-size: 36px; vertical-align: middle; font-weight: bold;">@totalAmount.ToString("0.00")</span></h4>
+
+		</div>
+	}
+}
+<div style="text-align: right;">
+		<h4>Total Earnings: <span style="font-size: 36px; vertical-align: middle; font-weight: bold;">@totalIsPaid.ToString("0.00")</span></h4>
+
+	</div>

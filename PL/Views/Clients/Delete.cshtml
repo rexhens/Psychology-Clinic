@@ -1,0 +1,53 @@
+﻿@model MVC_BLL.Models.Client
+
+@{
+    ViewData["Title"] = "Delete";
+}
+@{
+    var noAppointments = ViewBag.Appointments;
+    var noTreatment = ViewBag.Treatment;
+}
+<h1>Delete the Client @Model.Name</h1>
+<h2>
+    Their <strong>@noAppointments</strong>
+     Appointments, <strong>@noAppointments</strong>
+    Billings and <strong>@noTreatment</strong>
+    Treatment 
+</h2>
+
+<div>
+   
+    <hr />
+    <dl class="row">
+        
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Surname)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> 
+        <a asp-action="Index">Back to Clients</a>
+    </form>
+</div>

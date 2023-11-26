@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MVC_BLL.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>All Appointments</h1>
+ 
+        @{
+            // Separate past and future appointments
+            var now = DateTime.Now;
+            var pastAppointments = Model.Where(item => item.DateReserved < now).OrderByDescending(item => item.DateReserved);
+            var futureAppointments = Model.Where(item => item.DateReserved >= now).OrderBy(item => item.DateReserved);
+            bool futureAppointmentsLabelDisplayed = false; // Flag to track if the label has been displayed
+
+        }
+       
+        @foreach(var item in pastAppointments.Concat(futureAppointments))
+        //Concat -> merge past and future appointments into a single list
+        {
+    <partial name="_AppointmentsPartialView" model="item" />
+            @if (item.DateReserved > DateTime.Now && !futureAppointmentsLabelDisplayed)
+            {
+                
+
+                    <p colspan="9" align="center" style="font-weight: bold">Future Appointments</p>
+               
+                futureAppointmentsLabelDisplayed = true;
+            }
+            
+        }
+

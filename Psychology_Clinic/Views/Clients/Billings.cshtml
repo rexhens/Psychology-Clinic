@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MVC_BLL.Models.Billing>
+
+@{
+	ViewData["Title"] = "Billings";
+}
+
+<h1>Billings</h1>
+@{
+	decimal totalAmount = 0;
+
+	if(Model.Count() == 0)
+	{
+		<h2 style="color: green;" align ="center">There are no bills</h2>
+	}
+	else{
+<h2 style="color: green;">Paid Bills</h2>
+int i = 0;
+@foreach (var bill in Model)
+{
+	if(bill.Status == "Paid")
+	{
+		<partial name="_BillDetailsPartialView" model="bill" />
+		i++;
+	}
+	
+		}
+		if(i == 0)
+		{
+			<h2 align="center">There are no paid bills</h2>
+		}
+		i = 0;
+		<h2 style="color: red">Not Paid</h2>
+@foreach (var bill in Model)
+{
+	if (bill.Status == "Not Paid")
+	{
+				<partial name="_BillDetailsPartialView" model="bill" />
+				totalAmount += bill.Amount;
+				i++;
+			}
+
+}
+		if (i == 0)
+		{
+			<h2 align="center">There are no unpaid bills</h2>
+		}
+<div style="text-align: right;">
+	<h4>Total amount to be paid: <span style="font-size: 36px; vertical-align: middle; font-weight: bold;">@totalAmount.ToString("0.00")</span></h4>
+
+</div>
+}
+}

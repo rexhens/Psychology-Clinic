@@ -1,0 +1,30 @@
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\bin\Debug\net6.0\BLL.dll
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.dll
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\BLL.pdb
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\bin\Debug\net6.0\aDAL.dll
+C:\Users\User\OneDrive\Desktop\C-Projects\C# Projects\BLL\bin\Debug\net6.0\aDAL.pdb
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\bin\Debug\net6.0\BLL.deps.json
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\bin\Debug\net6.0\BLL.dll
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\bin\Debug\net6.0\BLL.pdb
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\bin\Debug\net6.0\aDAL.dll
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\bin\Debug\net6.0\aDAL.pdb
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.dll
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\refint\BLL.dll
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\BLL.pdb
+C:\Users\User\OneDrive\Desktop\GitHub.Net\yjet-23\rexhens\Projekti-Individual\BLL\obj\Debug\net6.0\ref\BLL.dll

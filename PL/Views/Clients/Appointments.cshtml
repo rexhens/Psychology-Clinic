@@ -1,0 +1,60 @@
+﻿    @model IEnumerable<MVC_BLL.Models.Appointment>
+
+    @{
+	    ViewData["Title"] = "Appointments";
+    }
+  
+    <h1>My Appointments</h1>
+    @if(Model.Count() == 0)
+	    {
+    <h2 style="color: green;" align="center">There are no Appointments you do have</h2>
+	    }
+
+		    @foreach (var item in Model)
+		    {
+        <div class="card m-2" style="display: inline-block; width: calc(33.33% - 20px); max-width: calc(33.33% - 20px);">
+            <img class="card-img-top mx-auto" src="@item.ImgUrlPhoto" alt="Client Photo" style="max-height: 100px; max-width: 100px;">
+            <div class="card-body">
+                @{
+                    var clientData = (IEnumerable<MVC_BLL.Models.Client>)ViewBag.Clients;
+                    var client = clientData.FirstOrDefault(c => c.Id == item.ClientId);
+                    var clientName = client != null ? client.Name : "N/A";
+                    var clientSurName = client != null ? client.Surname : "N/A";
+                }
+                <h5 class="card-title text-primary">@clientName @clientSurName</h5>
+                <p class="card-text">
+                    <strong>Date:</strong> @item.GetAppointmentDay() @item.GetAppointmentMonth()
+                    <br />
+                    <strong>Hours:</strong> @item.DateReserved.ToString("HH:mm") - @item.HourFinished()
+                    <br/>
+                    <strong>Type: </strong> Therapy Session
+                </p>
+               
+                    @if(item.DateReserved >= DateTime.Now)
+                {
+                <div>
+                      <form asp-controller="Appointments" asp-action="Delete" asp-route-id="@item.Id" method="get">
+                  <button type="submit" class="btn btn-primary" style="position: absolute; bottom: 10px; left: 230px;">Cancel Appointment</button>
+                  </form>
+                </div>
+                }
+              
+            </div>
+        </div>
+
+		    }
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Index">Back to Clients</a>
+    }<div class="container">
+        @if (User.IsInRole("Client"))
+        {
+            <div class="mt-4">
+                <form asp-controller="Appointments" asp-action="Add">
+                    <button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Make a new Appointment</button>
+                </form>
+            </div>
+        }
+    </div>
+
+

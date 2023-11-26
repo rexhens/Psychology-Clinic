@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MVC_BLL.Models.Client>
+
+@{
+    ViewData["Title"] = "Clients";
+}
+
+<h1>Clients</h1>
+
+
+@foreach(var client in Model)
+{
+    if (client.UserName != "admin")
+    {
+        <partial name="_ClientDetailsPartialView" model="client"/>
+    }
+}
+
+   

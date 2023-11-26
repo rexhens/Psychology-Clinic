@@ -1,0 +1,75 @@
+﻿@model MVC_BLL.Models.Treatment
+
+
+<style>
+    /* Increase font size for card content */
+    .card-body {
+        font-size: 1.3rem; /* You can adjust the font size as needed */
+    }
+
+    .left-column {
+        width: 60%;
+        float: left;
+        padding-right: 20px;
+    }
+
+    .right-column {
+        width: 40%;
+        float: left;
+    }
+</style>
+<body>
+@if (Model == null)
+{
+    <h2 style="color: green;" align="center">No Treatment Yet</h2>
+}
+else
+{
+    
+    ViewData["Title"] = "Details";
+    var client = ViewBag.Client as MVC_BLL.Models.Client;
+
+
+    <div class="container">
+        <h1>Details, treatment of @client.Name</h1>
+        <div class="left-column">
+            <div class="card m-2" style="background-color: #F5F5F5;">
+                <div class="image-container" style="background-color: transparent; text-align: center;">
+                    <img class="card-img-top mx-auto" src="@Model.ImgUrlPhoto" alt="Client Photo" style="max-height: 200px; max-width: 200px;">
+                </div>
+                <div class="card-body">
+                    <h5 style="font-size: 1.3rem;" class="card-title text-primary"><strong>Client:</strong> @client.Name @client.Surname</h5>
+                    <p style="font-weight: bold">
+                        <strong>Cause:</strong> @Model.Cause
+                    </p>
+                    <p>
+                        <strong>Description:</strong> @Model.Description
+                    </p>
+                    @{
+                        string endDate = Model.EndDate != null ? Model.EndDate.Value.ToString("dd-MM-yyyy") : "Not specified";
+                    }
+                    <p>
+                        <strong>Dates:</strong> @Model.StartDate.ToString("dd-MM-yyyy") - @endDate
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <div class="card m-2" style="background-color: #F5F5F5; font-size: 0.8rem;">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Detailed Description</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis,
+                        justo sit amet ultricies tincidunt, dolor purus consectetur ligula, a tincidunt.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis,
+                        justo sit amet ultricies tincidunt, dolor purus consectetur ligula, a tincidunt.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis,
+                        justo sit amet ultricies tincidunt, dolor purus consectetur ligula, a tincidunt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+</body>

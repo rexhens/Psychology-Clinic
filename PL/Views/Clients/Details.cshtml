@@ -1,0 +1,152 @@
+﻿@model MVC_BLL.Models.Client
+
+@{
+	ViewData["Title"] = "Details";
+}
+<style>
+	body {
+		background: #eee;
+	}
+
+	.card {
+		border: none;
+		position: relative;
+		overflow: hidden;
+		border-radius: 8px;
+		cursor: pointer;
+	}
+
+		.card:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background-color: #D3D3D3;
+			transform: scaleY(1);
+			transition: all 0.5s;
+			transform-origin: bottom
+		}
+
+		.card:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 4px;
+			height: 100%;
+			background-color: #4d7298;
+			transform: scaleY(0);
+			transition: all 0.5s;
+			transform-origin: bottom
+		}
+
+		.card:hover::after {
+			transform: scaleY(1);
+		}
+
+
+	.fonts {
+		font-size: 11px;
+	}
+
+	.social-list {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		padding: 0;
+	}
+
+		.social-list li {
+			padding: 10px;
+			color: #89CFF0;
+			font-size: 19px;
+		}
+
+
+
+
+</style>
+@* <h1>Details</h1>
+
+    <div>
+        <partial name="_ClientDetailsPartialView" model="Model" />
+    </div>
+    <div>
+
+        <a asp-action="Index">Back to Clients</a>
+    </div>
+     *@
+<div class="container mt-5">
+	<div class="row d-flex justify-content-center">
+		<div class="col-md-7">
+			<div class="card p-3 py-4">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="text-center">
+							<img src="@Model.ImgUrlProfilePhoto" width="100" class="rounded-circle">
+						</div>
+						<div class="text-center mt-3">
+							@if (User.IsInRole("Admin"))
+							{
+								<span class="bg-secondary p-1 px-4 rounded text-white">Client</span>
+
+							}else if(User.IsInRole("Client"))
+							{
+								<span class="bg-secondary p-1 px-4 rounded text-white">Client</span>
+
+							}
+							<h5 class="card-title">@Model.Name @Model.Surname</h5>
+							<p class="card-text">
+								Username: @Model.UserName
+								<br />
+								Email: @Model.Email
+								<br />
+								Phone Num: @Model.PhoneNum
+								<br />
+							</p>
+							<ul class="social-list">
+								<li><i class="fa fa-facebook"></i></li>
+								<li><i class="fa fa-dribbble"></i></li>
+								<li><i class="fa fa-instagram"></i></li>
+								<li><i class="fa fa-linkedin"></i></li>
+								<li><i class="fa fa-google"></i></li>
+							</ul>
+						</div>
+					</div>
+					@{
+						int[] displayNumbers = ViewBag.DisplayNumbers;
+					}
+					<div class="col-md-6">
+						<div class="text-center">
+							<h5>My Appointments</h5>
+							<p style="font-size: 36px; font-weight: bold;">@displayNumbers[0]</p>
+						</div>
+						<div class="text-center">
+							<h5>My Treatments</h5>
+							<p style="font-size: 36px; font-weight: bold;">@displayNumbers[2]</p>
+						</div>
+						<div class="text-center">
+							<h5>My Bills</h5>
+							<p style="font-size: 36px; font-weight: bold;">@displayNumbers[1]</p>
+						</div>
+					
+					</div>
+					<div class="mt-4">
+						<form asp-action="Edit" asp-route-id="@Model.Id" method="get">
+							<button type="submit" class="btn btn-primary btn-block" style="width: 100%;">Edit profile</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div
+@if(User.IsInRole("Admin"))
+{
+	<div>
+		<a asp-controller="Clients" asp-action="Index">Back to Client List</a>
+	</div>
+}

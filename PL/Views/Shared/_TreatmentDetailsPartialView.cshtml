@@ -1,0 +1,45 @@
+﻿@model MVC_BLL.Models.Treatment
+
+@{
+	ViewData["Title"] = "_AppointmentsPartialView";
+}
+
+<div class="card m-2" style="display: inline-block; width: calc(33.33% - 20px); max-width: calc(33.33% - 20px);">
+	<img class="card-img-top mx-auto" src="@Model.ImgUrlPhoto" alt="Client Photo" style="max-height: 100px; max-width: 100px;padding: 10px;">
+	<div class="card-body">
+		@{
+			var clientData = (IEnumerable<MVC_BLL.Models.Client>)ViewBag.Clients;
+			var client = clientData.FirstOrDefault(c => c.Id == Model.ClientId);
+			var clientName = client != null ? client.Name : "N/A";
+			var clientSurName = client != null ? client.Surname : "N/A";
+		}
+		<h5 class="card-title text-primary">@clientName @clientSurName</h5>
+		<p class="card-text">
+			@{
+				string endDate = null;
+				if (Model.EndDate == null)
+				{
+					endDate = "Not specified";
+				}
+				else
+				{
+					endDate = Model.EndDate?.ToString("dd-MM-yyyy");
+
+				}
+			}
+			<strong>Date:</strong> @Model.StartDate.ToString("dd-MM-yyyy") -  @endDate
+			<br />
+			<strong>Date:</strong> @Model.Cause
+			<br />
+
+			<strong>Description:</strong> @Model.Description
+		</p>
+		<div class="btn-group" role="group">
+			<a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+			<a class="btn btn-primary" asp-action="Details" asp-route-id="@Model.Id">Details</a>
+			<a class="btn btn-primary" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+			<a class="btn btn-primary" asp-action="Client" asp-route-id="@Model.Id">Client</a>
+		</div>
+	</div>
+</div>
+

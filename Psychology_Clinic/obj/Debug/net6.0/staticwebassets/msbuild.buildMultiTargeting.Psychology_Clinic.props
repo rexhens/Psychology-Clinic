@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Psychology_Clinic.props" />
+</Project>

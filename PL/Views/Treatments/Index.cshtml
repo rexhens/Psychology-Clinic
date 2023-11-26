@@ -1,0 +1,14 @@
+﻿@model IEnumerable<MVC_BLL.Models.Treatment>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Treatments of all the Clients</h1>
+
+<p>
+    <a asp-action="Add">Make a new Treatment</a>
+@foreach(var treatment in Model)
+    {
+        <partial name="_TreatmentDetailsPartialView" model="treatment"/>
+    }

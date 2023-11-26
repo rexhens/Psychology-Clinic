@@ -1,0 +1,33 @@
+﻿@model MVC_BLL.Models.Client
+
+
+<style>
+	
+	.button-spacing {
+		margin-right: 20px;
+	}
+
+	.vertical-spacing {
+		margin-bottom: 10px; 
+	}
+
+</style>
+<div class="card m-2" style="display: inline-block; width: calc(33.33% - 20px); max-width: calc(33.33% - 20px);">
+	<img class="card-img-top" src="@Model.ImgUrlProfilePhoto" alt="Card image cap" style="max-height: 100px; max-width: 100px;">
+	<div class="card-body">
+		<h5 class="card-title">@Model.Name @Model.Surname</h5>
+		<p class="card-text">
+			Email: @Model.Email
+			<br/>
+			Phone Num: @Model.PhoneNum
+			<br/>
+		</p>
+		<a class="btn btn-primary vertical-spacing" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+		<a class="btn btn-primary vertical-spacing" asp-action="Details" asp-route-id="@Model.Id">Details</a>
+		<a class="btn btn-primary vertical-spacing" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+		<a class="btn btn-primary vertical-spacing" asp-action="Appointments" asp-route-id="@Model.Id">Appointments</a>
+		<a class="btn btn-primary vertical-spacing" asp-action="Billings" asp-route-id="@Model.Id">Billings</a>
+
+	</div>
+</div>
+

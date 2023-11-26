@@ -1,0 +1,41 @@
+﻿@model MVC_BLL.Models.Appointment
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+@if (User.IsInRole("Admin"))
+{
+<h3>Are you sure you want to cancel this Appointment?</h3>
+<div>
+    <h4>Appointment</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+       
+    </dl>
+    
+    <form asp-action="Delete">
+            <input type="submit" value="Delete" class="btn btn-danger" style="width: 100%;" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+}
+else if(User.IsInRole("Client"))
+{
+    <h3>Are you sure you want to cancel Your Appointment</h3>
+    <h2>Scheduled at @Model.DateReserved.ToString("dd/MM/yyyy")?</h2>
+    <h2>This will also affect your Billing on that appointment</h2>
+    <br />
+    <br />
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" style="width: 100%;" /> 
+        <a asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientId">Back to List</a>
+    </form>
+}

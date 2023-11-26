@@ -1,0 +1,47 @@
+﻿@model MVC_BLL.Models.Treatment
+
+@{
+    ViewData["Title"] = "Details";
+    var client = ViewBag.Client;
+}
+
+<style>
+    /* Increase font size for card content */
+    .card-body {
+        font-size: 1.3rem; /* You can adjust the font size as needed */
+    }
+</style>
+
+<div class="container">
+    <h1>Details, treatment of @client.Name</h1>
+
+    <div class="card m-2">
+        <img class="card-img-top mx-auto" src="@Model.ImgUrlPhoto" alt="Client Photo" style="max-height: 200px; max-width: 200px;">
+        <div class="card-body">
+            <h5 style="font-size: 1.3rem;" class="card-title text-primary"><strong>Client:</strong> @client.Name @client.Surname</h5>
+            <p class="card-text">
+                @{
+                    string endDate = null;
+                    if (Model.EndDate == null)
+                    {
+                        endDate = "Not specified";
+                    }
+                    else
+                    {
+                        endDate = Model.EndDate?.ToString("dd-MM-yyyy");
+
+                    }
+                }
+                <strong>Date:</strong> @Model.StartDate.ToString("dd-MM-yyyy") -  @endDate
+            </p>
+            <p style="font-weight: bold">
+                <strong>Cause:</strong> @Model.Cause
+            </p>
+            <p>
+                <strong>Description:</strong> @Model.Description
+            </p>
+        </div>
+    </div>
+
+    <a asp-action="Index">Back to Treatment List</a>
+</div>

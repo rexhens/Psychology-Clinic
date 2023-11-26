@@ -1,0 +1,54 @@
+﻿@model MVC_BLL.Models.Billing
+
+
+<div class="card m-2" style="display: inline-block; width: calc(33.33% - 20px); max-width: calc(33.33% - 20px);">
+	<img class="card-img-top" src="@Model.BillPhoto" alt="Card image cap" style="max-height: 100px; max-width: 100px;">
+	<div class="card-body">
+		@{
+			var clientList = ViewBag.Clients as IEnumerable<MVC_BLL.Models.Client>;
+			var client = clientList.FirstOrDefault(x => x.Id == Model.ClientId);
+			var clientName = client != null ? client.Name : "Client Not Found";
+			var clientSurName = client != null ? client.Surname : "Client Not Found";
+		}
+
+		<h5 class="card-title"> @clientName @clientSurName</h5>
+		<p class="card-text">
+			@{
+				var appointmentList = ViewBag.Appointments as IEnumerable<MVC_BLL.Models.Appointment>;
+				var appointment = appointmentList.FirstOrDefault(x => x.Id == Model.AppointmentId);
+				var date = appointment.DateReserved.ToString("dd/MM/yyyy");
+			}
+
+			Appointment Date: @date
+			<br />
+			Billing Date: @Model.BillingDate
+			<br />
+			@if(Model.Status == "Paid")
+			{
+			<p style="color : green">
+				Billing Status: @Model.Status
+				
+				</p>
+			}
+			else
+				{
+				<p style="color : red">
+					Billing Status: @Model.Status
+
+				</p>
+				}
+				
+			<br/>
+			Amount:<strong style="font-weight: bold"> @Model.Amount.ToString("0.00");</strong>
+			@if(Model.Status == "Not Paid")
+			{
+			<form method="post" action="@Url.Action("PayBill", "Billings", new {id = Model.Id})">
+					@Html.HiddenFor(model => model.Id)
+
+				<button type="submit" class="btn btn-primary">Pay the bill</button>
+			</form>
+			}
+		
+	</div>
+</div>
+

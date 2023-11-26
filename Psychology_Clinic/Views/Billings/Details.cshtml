@@ -1,0 +1,61 @@
+﻿@model MVC_BLL.Models.Billing
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Billing</h4>
+    <hr />
+    <dl class="row">
+
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BillingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BillingDate)
+        </dd>
+        <dt class = "col-sm-2">
+            Client
+        </dt>
+        <dd class = "col-sm-10">
+            @{
+                var clientList = ViewBag.Clients as IEnumerable<MVC_BLL.Models.Client>;
+                var client = clientList.FirstOrDefault(x => x.Id == Model.ClientId);
+                var clientName = client != null ? client.Name : "Client Not Found";
+                var clientSurName = client != null ? client.Surname : "Client Not Found";
+            }
+            @clientName @clientSurName
+        </dd>
+        <dt class = "col-sm-2">
+          Date of the appointment
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppointmentId)
+            @{
+                var appointmentList = ViewBag.Appointments as IEnumerable<MVC_BLL.Models.Appointment>;
+                var appointment = appointmentList.FirstOrDefault(x => x.Id == Model.AppointmentId);
+                var date = appointment.DateReserved.ToString("dd/MM/yyyy");
+            }
+            @date
+        </dd>
+        <dt class="col-sm-2">
+            Bill Status
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Status
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
