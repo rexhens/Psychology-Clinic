@@ -7,11 +7,20 @@
 		@{
 			var clientList = ViewBag.Clients as IEnumerable<MVC_BLL.Models.Client>;
 			var client = clientList.FirstOrDefault(x => x.Id == Model.ClientId);
-			var clientName = client != null ? client.Name : "Client Not Found";
-			var clientSurName = client != null ? client.Surname : "Client Not Found";
+			var clientName = client != null ? client.Name : Model.DeletedClientName;
+			var clientSurName = client != null ? client.Surname : Model.DeletedClientSurName;
 		}
 
 		<h5 class="card-title"> @clientName @clientSurName</h5>
+		@if(clientName == Model.DeletedClientName)
+		{
+			<h8 class="card-title">This client is no longer in therapy</h8>
+		}
+		else
+		{
+			<h8 class="card-title">In therapy</h8>
+
+		}
 		<p class="card-text">
 		 	@{
 				var appointmentList = ViewBag.Appointments as IEnumerable<MVC_BLL.Models.Appointment>;

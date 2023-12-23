@@ -14,6 +14,8 @@ namespace DAL.Models
         public DateTime DateReserved { get; set; }
         public string Notes { get; set; }   
         public int ClientId { get; set; }
+        public string? DeletedClientName { get; set; }
+        public string? DeletedClientSurName { get; set; }
 
     }
 }

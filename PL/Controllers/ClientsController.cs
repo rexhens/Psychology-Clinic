@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using MVC_BLL.Models;
 using Microsoft.AspNetCore.Authorization;
 using MVC_BLL;
+using System.ComponentModel.DataAnnotations;
 
 namespace Psychology_Clinic.Controllers
 {
@@ -15,12 +16,15 @@ namespace Psychology_Clinic.Controllers
 		private readonly IAppointmentService _appointmentService;
 		private readonly IBillingService _billingService;
 		private readonly ITreatmentsService _treatmentsService;
-		public ClientsController(IClientService clientService, IAppointmentService appointmentService, IBillingService billingService, ITreatmentsService treatmentsService)
+		private readonly ITherapistService _therapistService;
+		public ClientsController(IClientService clientService, IAppointmentService appointmentService,
+			IBillingService billingService, ITreatmentsService treatmentsService,ITherapistService therapistService)
 		{
 			_clientService = clientService;
 			_appointmentService = appointmentService;
 			_billingService = billingService;
 			_treatmentsService = treatmentsService;
+			_therapistService = therapistService;
 		}
 		[Authorize(Roles = "Admin")]
 		public ActionResult Index()
@@ -66,33 +70,43 @@ namespace Psychology_Clinic.Controllers
 		[Authorize]
 		public async Task<ActionResult> Edit(int id)
 		{
-			var exist = await _clientService.GetByIdAsync(id);
-			if (exist != null)
-			{
-				return View(exist);
-			}
+				var exist = await _clientService.GetByIdAsync(id);
+				var clientAddModel = await _clientService.GetClientByUserNameAsync(exist.UserName);
+				if (exist != null)
+				{
+					ViewBag.ClientId = id;
+                    ViewBag.Therapists = _therapistService.GetTherapists();
+                    return View(clientAddModel);
+				}	
 			return RedirectToAction("Index");
 		}
 		[HttpPost]
 		[Authorize]
-		public async Task<IActionResult> EditAsync(int id, MVC_BLL.Models.Client client)
+		public async Task<IActionResult> EditAsync(int id, MVC_BLL.Models.Requests.ClientAddModel client)
 		{
-			if (ModelState.IsValid)
-			{
-				var editedAcc = await _clientService.EditClientAsync(client, id);
-				if (editedAcc.Status == MVC_BLL.Models.ViewResponseStatus.Ok)
-				{
+			StandardViewResponse<bool> editedAcc = null;
+            var validateClient = client.Validate(new ValidationContext(client));
+            if (!validateClient.Any())
+            {
+                 editedAcc = await _clientService.EditClientAsync(client, id);
+			if (editedAcc.Status == MVC_BLL.Models.ViewResponseStatus.Ok)
+			{				
 					if (User.IsInRole("Client"))
 					{
 						return RedirectToAction("Details", new { id = id });
 					}
-					return RedirectToAction(nameof(Index));
-				}
-				ViewBag.ActionResponse = editedAcc;
-				ModelState.AddModelError("Name", editedAcc.ErrorMessage);
+				return RedirectToAction(nameof(Index));
+			    }
 			}
 
-			return View(client);
+            if (editedAcc != null)
+			{
+                ViewBag.ActionResponse = editedAcc;
+                ModelState.AddModelError("Name", editedAcc.ErrorMessage);
+            }
+            ViewBag.Therapists = _therapistService.GetTherapists();
+            ViewBag.ClientId = id;
+            return View(client);
 		}
 
 		[HttpGet]

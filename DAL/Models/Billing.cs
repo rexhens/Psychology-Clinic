@@ -13,5 +13,8 @@ namespace DAL.Models
         public int ClientId { get;set; }
         public int AppointmentId { get; set; }
         public string Status { get; set; }
+        public string? DeletedClientName { get; set; }
+        public string? DeletedClientSurName { get; set; }
+
     }
 }

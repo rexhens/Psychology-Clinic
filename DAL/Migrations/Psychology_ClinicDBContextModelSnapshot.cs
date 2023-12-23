@@ -37,6 +37,12 @@ namespace DAL.Migrations
                         .HasColumnType("datetime2")
                         .HasColumnName("AppointmentDate");
 
+                    b.Property<string>("DeletedClientName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DeletedClientSurName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Notes")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -90,6 +96,12 @@ namespace DAL.Migrations
                     b.Property<int>("ClientId")
                         .HasColumnType("int");
 
+                    b.Property<string>("DeletedClientName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("DeletedClientSurName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -131,6 +143,7 @@ namespace DAL.Migrations
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NormalizedEmail")
@@ -154,9 +167,10 @@ namespace DAL.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Surname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TherapistLicenseNo")
+                    b.Property<int>("TherapistLicenseNo")
                         .HasColumnType("int");
 
                     b.Property<bool>("TwoFactorEnabled")

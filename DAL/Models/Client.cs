@@ -12,9 +12,9 @@ namespace DAL.Models
     [Table("AspNetUsers")]
     public class Client : IdentityUser<int>
     {
-        public string? Name { get; set; }
-        public string? Surname { get; set; }
-        public int? TherapistLicenseNo { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int TherapistLicenseNo { get; set; }
         public string? ImgUrlProfilePic { get; set; }
         public Client()
         {

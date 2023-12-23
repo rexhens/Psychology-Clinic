@@ -42,14 +42,7 @@ namespace Psychology_Clinic.Controllers
 		{
 			return View();
 		}
-		[Route("/error/{statusCode}")]
-		public IActionResult Error(int? statusCode)
-		{
-			return View(new ErrorViewModel
-			{
-				StatusCode = statusCode ?? 400
-			});
-		}
+		
 
       
     }

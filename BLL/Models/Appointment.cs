@@ -43,6 +43,9 @@ namespace MVC_BLL.Models
                 _imgUrlPhoto = value;
             }
         }
+        public string? DeletedClientName { get; set; }
+        public string? DeletedClientSurName { get; set; }
+
 
     }
 }

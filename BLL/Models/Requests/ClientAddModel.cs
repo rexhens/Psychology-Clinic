@@ -31,9 +31,7 @@ namespace MVC_BLL.Models.Requests
 		[Required(ErrorMessage = "You must enter the UserName!")]
         [MaxLength(100), MinLength(3)]
         public string UserName { get;set; }
-		[Required(ErrorMessage = "You must enter the Password!")]
-		[MinLength(8)]
-        public string? Password { get; set; }
+        public int TherapistLicenseNo { get;set; }
         public string? ImgUrlProfilePhoto
         {
             get
@@ -52,26 +50,32 @@ namespace MVC_BLL.Models.Requests
 
 		public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
 		{
-			if(PhoneNum.Length != 10)
-			{
-				yield return new ValidationResult("Phone number's lenthgth must be exactly 10!");
-			}
-			foreach(char c in Surname)
-			{
-				if(char.IsNumber(c))
-				{
-                    yield return new ValidationResult("Surname cannot contain numbers!");
+            if (PhoneNum == null || PhoneNum.Length != 10)
+            {
+                yield return new ValidationResult("Phone number's length must be exactly 10!");
+            }
 
+            if (Name != null)
+            {
+                foreach (char c in Name)
+                {
+                    if (char.IsNumber(c))
+                    {
+                        yield return new ValidationResult("Name cannot contain numbers!");
+                    }
                 }
             }
-            foreach (char c in Name)
-            {
-                if (char.IsNumber(c))
-                {
-                    yield return new ValidationResult("Name cannot contain numbers!");
 
+            if (Surname != null)
+            {
+                foreach (char c in Surname)
+                {
+                    if (char.IsNumber(c))
+                    {
+                        yield return new ValidationResult("Surname cannot contain numbers!");
+                    }
                 }
             }
         }
-	}
+    }
 }

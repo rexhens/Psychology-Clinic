@@ -19,8 +19,9 @@ namespace MVC_BLL.Services
 		Task<StandardViewResponse<ClientAddModel>> GetByIdClientAddModelAsync(int id);
 		Task<StandardViewResponse<bool>> AddClientAsync(ClientAddModel client);
 		Task<StandardViewResponse<bool>> DeleteClientAsync(int id);
-		Task<StandardViewResponse<bool>> EditClientAsync(Client client, int id);
+		Task<StandardViewResponse<bool>> EditClientAsync(ClientAddModel client, int id);
 		StandardViewResponse<bool> ValidateClient(ClientAddModel client);
+		Task<ClientAddModel> GetClientByUserNameAsync(string username);
 	}
 
 	public class ClientsService : BaseService, IClientService
@@ -97,7 +98,7 @@ namespace MVC_BLL.Services
 			}
 			//  return new StandardViewResponse<bool>(false, "Client could not be added!");           
 		}
-		public async Task<StandardViewResponse<bool>> EditClientAsync(Client client, int id)
+		public async Task<StandardViewResponse<bool>> EditClientAsync(ClientAddModel client, int id)
 		{
 			try
 			{
@@ -105,13 +106,13 @@ namespace MVC_BLL.Services
 				if (existClient != null)
 				{
 					var edited = await _unitOfWork.ClientsRepository.GetByIdAsync(id);
-					edited.Id = client.Id;
+					edited.Id = id;
 					edited.Name = client.Name;
 					edited.Surname = client.Surname;
 					edited.Email = client.Email;
 					edited.PhoneNumber = client.PhoneNum;
 					edited.ImgUrlProfilePic = client.ImgUrlProfilePhoto;
-					edited.TherapistLicenseNo = client.TherapistLicenseNo = 1;
+					edited.TherapistLicenseNo = (int)(client.TherapistLicenseNo = 1);
 
 					if (edited != null)
 					{
@@ -141,14 +142,23 @@ namespace MVC_BLL.Services
 		{
 			try
 			{
+				var client = await _unitOfWork.ClientsRepository.GetByIdAsync(id);
 				var deleted = await _unitOfWork.ClientsRepository.DeleteAsync(id);
 				var deletedAppointments = await _unitOfWork.AppointmentRepository.GetAppointmentsByClientIdAsync(id);
-				foreach (var appointment in deletedAppointments)
+				var billings = _unitOfWork.BillingsRepository.GetBillingByClientId(id).ToList();
+				for (int i = 0; i < deletedAppointments.Count();i++)
 				{
-					if(appointment.DateReserved >= DateTime.UtcNow)
+					if (deletedAppointments[i].DateReserved >= DateTime.UtcNow)
 					{
-						_unitOfWork.AppointmentRepository.DeleteByClientId(id);
-						_unitOfWork.BillingsRepository.DeleteByAppointmentID(appointment.Id);
+                        _unitOfWork.AppointmentRepository.DeleteByClientId(id);
+						_unitOfWork.BillingsRepository.DeleteByClientId(id);
+					}
+					else
+					{
+						deletedAppointments[i].DeletedClientName = client.Name;
+						deletedAppointments[i].DeletedClientSurName = client.Surname;
+						billings[i].DeletedClientName = client.Name;
+						billings[i].DeletedClientSurName = client.Surname;
 					}
 				}
 				if (deleted)
@@ -264,6 +274,34 @@ namespace MVC_BLL.Services
 			}
             return new StandardViewResponse<bool>(true);
 
+        }
+
+        public async Task<ClientAddModel> GetClientByUserNameAsync(string username)
+        {
+			try
+			{
+				var client = await _unitOfWork.ClientsRepository.GetByUserNameAsync(username);
+				if(client == null)
+				{
+					return null;
+				}
+				ClientAddModel clientAddModel = new ClientAddModel
+				{
+					Email = client.Email,
+					ImgUrlProfilePhoto = client.ImgUrlProfilePic,
+					Name = client.Name,
+					Surname = client.Surname,
+					PhoneNum = client.PhoneNumber,
+					UserName = client.UserName,
+					TherapistLicenseNo = (int)client.TherapistLicenseNo
+				};
+				return clientAddModel;
+			} catch (Exception ex)
+			{
+                _loggerService.LogError($"Error in ValidateClient method: {ex.Message}");
+
+            }
+			return null;
         }
     }
 }

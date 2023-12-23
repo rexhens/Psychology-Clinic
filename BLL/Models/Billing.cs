@@ -54,5 +54,8 @@ namespace MVC_BLL.Models
             Status = "Paid";
             return true;
         }
+        public string? DeletedClientName { get; set; }
+        public string? DeletedClientSurName { get; set; }
+
     }
 }

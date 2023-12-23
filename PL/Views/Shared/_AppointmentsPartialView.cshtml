@@ -10,10 +10,20 @@
         @{
             var clientData = (IEnumerable<MVC_BLL.Models.Client>)ViewBag.Clients;
             var client = clientData.FirstOrDefault(c => c.Id == Model.ClientId);
-            var clientName = client != null ? client.Name : "N/A";
-            var clientSurName = client != null ? client.Surname : "N/A";
+            var clientName = client != null ? client.Name : Model.DeletedClientName;
+            var clientSurName = client != null ? client.Surname : Model.DeletedClientSurName;
         }
         <h5 class="card-title text-primary">@clientName @clientSurName</h5>
+        @if(clientName == Model.DeletedClientName)
+        {
+            <h8 class="card-title text-primary">This client is no longer in therapy</h8>
+
+        }
+        else
+        {
+            <h8 class="card-title text-primary">In therapy</h8>
+
+        }
         <p class="card-text">
             <strong>Date:</strong> @Model.GetAppointmentDay() @Model.GetAppointmentMonth()
             <br />

@@ -38,6 +38,8 @@ namespace MVC_BLL.Services
                     ClientId = billing.ClientId,
                     AppointmentId = billing.AppointmentId,
                     Status = billing.Status,
+                    DeletedClientSurName = billing.DeletedClientSurName,
+                    DeletedClientName = billing.DeletedClientName,
                 });
 
                 _unitOfWork.Commit();
@@ -123,7 +125,9 @@ namespace MVC_BLL.Services
                         ClientId = dal.ClientId,
                         AppointmentId = dal.AppointmentId,
                         Status = dal.Status,
-                    });
+                        DeletedClientName = dal.DeletedClientName,
+                        DeletedClientSurName = dal.DeletedClientSurName
+                    }) ;
                 }
 
             }
@@ -158,6 +162,8 @@ namespace MVC_BLL.Services
                     ClientId = dalBilling.ClientId,
                     AppointmentId = dalBilling.AppointmentId,
                     Status = dalBilling.Status,
+                    DeletedClientName = dalBilling.DeletedClientName,
+                    DeletedClientSurName = dalBilling.DeletedClientSurName
                 };
             }
             catch (Exception ex)

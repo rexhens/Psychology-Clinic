@@ -51,6 +51,8 @@ namespace MVC_BLL.Services
                         app.DateReserved = appointment.DateReserved;
                         app.Notes = appointment.Notes;
                         app.ClientId = appointment.ClientId;
+                        app.DeletedClientName = appointment.DeletedClientName;
+                        app.DeletedClientSurName = appointment.DeletedClientSurName;
                         bllAppointments.Add(app);
                     }
                     return bllAppointments;
@@ -154,7 +156,8 @@ namespace MVC_BLL.Services
                     DateReserved = dalAppointment.DateReserved,
                     Notes = dalAppointment.Notes,
                     ClientId = dalAppointment.ClientId,
-
+                    DeletedClientSurName = dalAppointment.DeletedClientSurName,
+                    DeletedClientName = dalAppointment.DeletedClientName,
                 };
                 return bllAppointment;
             }
@@ -182,6 +185,9 @@ namespace MVC_BLL.Services
                 exist.DateReserved = appointment.DateReserved;
                 exist.Notes = appointment.Notes;
                 exist.ClientId = appointment.ClientId;
+                exist.DeletedClientSurName = appointment.DeletedClientSurName;
+                exist.DeletedClientName = appointment.DeletedClientName;
+
                 _unitOfWork.Commit();
                 OnLogOccured?.Invoke(new DAL.Models.AuditLog
                 {
@@ -222,6 +228,8 @@ namespace MVC_BLL.Services
                         DateReserved = appointment.DateReserved,
                         Notes = appointment.Notes,
                         ClientId = appointment.ClientId,
+                        DeletedClientName = appointment.DeletedClientName,
+                        DeletedClientSurName = appointment.DeletedClientSurName,
                     };
                     appointmentsList.Add(app);
                 }

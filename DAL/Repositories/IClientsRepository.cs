@@ -18,6 +18,7 @@ namespace DAL.Repositories
 		Task<int> AddAsync(Client entity);
 		IEnumerable<Client> GetAll();
 		Client GetByName(string name);
+		Task<Client> GetByUserNameAsync(string username);
 	}
 	internal class ClientRepository : IClientsRepository
 	{
@@ -65,7 +66,12 @@ namespace DAL.Repositories
 				.ToList();
 		}
 
-		public async Task<Client> GetByIdAsync(int id)
+        public async Task<Client> GetByUserNameAsync(string userName)
+        {
+            return await _set.FirstOrDefaultAsync(x =>x.UserName == userName);
+        }
+
+        public async Task<Client> GetByIdAsync(int id)
 		{
 			return await _set.FindAsync(id);
 		}
