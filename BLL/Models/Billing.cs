@@ -25,8 +25,7 @@ namespace MVC_BLL.Models
             {
                 if (_billPhoto == null)
                 {
-                    _billPhoto = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFz9TL5eK7PgDYA0kmEU0LCrzZxQB5qyW1g&usqp=CAU";
-                }
+                    _billPhoto = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrJgrd1FTZ8VZtcKK0U1DTpCDeXrQewZdMh1s0Tdjv_VgyFZ6tFTk9gap4ETXaAaj2RwY&usqp=CAU";  }
                 return _billPhoto;
             }
             set

@@ -9,181 +9,187 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PL
 build_property.RootNamespace = PL
-build_property.ProjectDir = C:\Users\User\OneDrive\Desktop\C-Projects\Psychology-Clinic\PL\
+build_property.ProjectDir = C:\Users\User\OneDrive\Desktop\Projects\Psychology-Clinic\PL\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\OneDrive\Desktop\C-Projects\Psychology-Clinic\PL
+build_property.MSBuildProjectDirectory = C:\Users\User\OneDrive\Desktop\Projects\Psychology-Clinic\PL
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Add.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Billing.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Billing.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEJpbGxpbmcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Delete.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Details.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Edit.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Appointments/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Appointments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Billings/Add.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Billings/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ3NcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Billings/Details.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Billings/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Billings/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Billings/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmlsbGluZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Add.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Appointments.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xBcHBvaW50bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Billings.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Billings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xCaWxsaW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Delete.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/DataTableView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEYXRhVGFibGVWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Details.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Edit.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Clients/Treatment.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Clients/Treatment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50c1xUcmVhdG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Home/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Home/Privacy.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/Error.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_AppointmentsPartialView.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_AppointmentsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BcHBvaW50bWVudHNQYXJ0aWFsVmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_BillDetailsPartialView.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_BillDetailsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9CaWxsRGV0YWlsc1BhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_ClientDetailsPartialView.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_ClientDetailsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DbGllbnREZXRhaWxzUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_TreatmentDetailsPartialView.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_TreatmentDetailsPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UcmVhdG1lbnREZXRhaWxzUGFydGlhbFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Therapists/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Therapists/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlcmFwaXN0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Add.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Client.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Client.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xDbGllbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Delete.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Details.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Edit.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Treatments/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Treatments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJlYXRtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/_ViewImports.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/OneDrive/Desktop/C-Projects/Psychology-Clinic/PL/Views/Shared/_Layout.cshtml]
+[C:/Users/User/OneDrive/Desktop/Projects/Psychology-Clinic/PL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ykycstrbf1

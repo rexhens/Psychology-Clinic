@@ -1,0 +1,130 @@
+﻿@model IEnumerable<MVC_BLL.Models.Client>
+
+@{
+    ViewData["Title"] = "DataTableView";
+}
+
+<div class="row align-items-center">
+    <div class="col">
+        <h1>Clients</h1>
+    </div>
+    <div class="col">
+        <a class="btn btn-primary btn-lg vertical-spacing" asp-action="Index">Change view</a>
+    </div>
+</div>
+<br />
+<table class="table table-bordered table-striped" id="clients_table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                Action
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+<script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+<script>
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        LoadClients();
+    });
+
+    function LoadClients() {
+        var client_data = [];
+        $.ajax({
+            type: 'POST',
+            url: "/Clients/GetClientsTableList",
+            async: false,
+            success: function (data) {
+                $.each(data, function (key, value) {
+                    client_data.push([value.name, value.surname, value.phoneNum, value.email, value.userName, value.id]);
+                });
+            }
+        });
+
+        var table = js('#clients_table').DataTable({
+            data: client_data,
+            paging: true,
+            searching: true,
+            columns: [
+                { title: "Name" },
+                { title: "Surname" },
+                { title: "Phone Number" },
+                { title: "Email" },
+                { title: "Username" },
+                {
+                    title: "Actions",
+                    render: function (data, type, row, meta) {
+                        return '<button type="button" class="btn btn-primary btn-sm editBtn" data-id="' + meta.row + '">Edit</button>' +
+                            '<button type="button" class="btn btn-danger btn-sm deleteBtn" data-id="' + meta.row + '">Delete</button>';
+                    }
+                }
+            ]
+        });
+        js('.dataTables_paginate').eq(0).hide();
+        // Event handler for edit button
+        js('#clients_table').on('click', '.editBtn', function () {
+            var rowId = js(this).data('id');
+            var clientId = client_data[rowId][5];
+            console.log(clientId);
+            js.ajax({
+                type: 'POST',
+                url: '/Clients/Edit',
+                data: { clientId: clientId },
+                success: function (response) {
+                    window.location.href = '/Clients/Edit/' + clientId;
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr, status, error);
+                }
+            });
+        });
+        //Event handler for delete button
+        js('#clients_table').on('click', '.deleteBtn', function () {
+            var rowId = js(this).data('id');
+            var clientId = client_data[rowId][5];
+            js.ajax({
+                type: 'POST',
+                url: 'Clients/Delete',
+                data: { clientId: clientId },
+                success: function (response) {
+                    window.location.href = '/Clients/Delete/' + clientId;
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr, status, error);
+                }
+            });
+        });
+
+        // Event handler for row click
+        js('#clients_table tbody').on('click', 'tr', function () {
+            var rowData = table.row(this).data();
+            var clientId = rowData[5]; 
+            window.location.href = '/Clients/Details/' + clientId;
+        });
+
+    }
+
+
+</script>

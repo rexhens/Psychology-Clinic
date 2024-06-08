@@ -1,0 +1,2 @@
+Therapist Side -> admin Admin123$
+Client Side -> afrim Admin123$

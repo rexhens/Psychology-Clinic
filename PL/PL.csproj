@@ -1,40 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-PL-141c11a3-1cc0-45be-a57d-ce004987634f</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>aspnet-PL-141c11a3-1cc0-45be-a57d-ce004987634f</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.20" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.23" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.23" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.23">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.20" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.23" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.23" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.23" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.23">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+		<PackageReference Include="Polybioz.HtmlRenderer.PdfSharp.Core" Version="1.0.0" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BLL\MVC_BLL.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\BLL\MVC_BLL.csproj" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\imgs\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="wwwroot\imgs\" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\imgs\abtus.jpg" />
-    <None Include="wwwroot\imgs\abtus2.jpg" />
-    <None Include="wwwroot\imgs\pchkg4.jpg" />
-    <None Include="wwwroot\imgs\pchlg2.jpg" />
-    <None Include="wwwroot\imgs\pchlg3.jpg" />
-    <None Include="wwwroot\imgs\pschlg.jpg" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="wwwroot\imgs\abtus.jpg" />
+		<None Include="wwwroot\imgs\abtus2.jpg" />
+		<None Include="wwwroot\imgs\pchkg4.jpg" />
+		<None Include="wwwroot\imgs\pchlg2.jpg" />
+		<None Include="wwwroot\imgs\pchlg3.jpg" />
+		<None Include="wwwroot\imgs\pschlg.jpg" />
+	</ItemGroup>
 
 </Project>

@@ -8638,11 +8638,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\MVC_Test\\MVC_Test.csproj",
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\MVC_Test\\MVC_Test.csproj",
       "projectName": "MVC_Test",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\MVC_Test\\MVC_Test.csproj",
+      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\MVC_Test\\MVC_Test.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\MVC_Test\\obj\\",
+      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\MVC_Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8659,11 +8659,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\BLL\\MVC_BLL.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\BLL\\MVC_BLL.csproj"
+            "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\MVC_BLL.csproj": {
+              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\MVC_BLL.csproj"
             },
-            "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\C-Projects\\Psychology-Clinic\\DAL\\DAL.csproj"
+            "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\DAL.csproj"
             }
           }
         }
@@ -8672,6 +8672,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8727,7 +8732,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   },

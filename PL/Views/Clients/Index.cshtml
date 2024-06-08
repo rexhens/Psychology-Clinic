@@ -3,9 +3,16 @@
 @{
     ViewData["Title"] = "Clients";
 }
+<div class="row align-items-center">
+    <div class="col">
+        <h1>Clients</h1>
+    </div>
+    <div class="col">
+        <a class="btn btn-primary btn-lg vertical-spacing" asp-action="DataTableView">Change view</a>
+    </div>
+</div>
 
-<h1>Clients</h1>
-
+</br>
 
 @foreach(var client in Model)
 {
@@ -13,6 +20,5 @@
     {
         <partial name="_ClientDetailsPartialView" model="client"/>
     }
-}
+    }
 
-   

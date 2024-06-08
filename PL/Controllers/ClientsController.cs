@@ -30,9 +30,10 @@ namespace Psychology_Clinic.Controllers
 		public ActionResult Index()
 		{
 			var clients = _clientService.GetAll();
-			if (clients != null)
-				return View(clients);
-			return View();
+			return View(clients);
+			//if (clients != null)
+			//	return View(clients);
+			//return View();
 		}
 		[HttpGet]
 		[Authorize(Roles = "Admin")]
@@ -250,6 +251,19 @@ namespace Psychology_Clinic.Controllers
 			}
 			return View(treatment);
 		}
+		public IActionResult GetClientsTableList()
+		{
 
+            var clients = _clientService.GetAll();
+            if (clients != null)
+                return Json(clients);
+            return View();
+        }
+		[HttpGet]
+		public IActionResult DataTableView()
+		{
+            var clients = new List<Client>();
+            return View(clients);
+		}
 	}
 }

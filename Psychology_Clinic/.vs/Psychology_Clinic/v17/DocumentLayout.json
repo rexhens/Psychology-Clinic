@@ -1,0 +1,295 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\Psychology_Clinic\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\views\\clients\\datatableview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\controllers\\billingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\views\\shared\\_billdetailspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\models\\billing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\services\\billingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6C1AC0D-881C-4092-AE8B-84254E8729A3}|..\\MVC_Test\\MVC_Test.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\mvc_test\\treatmenttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A264B52-440F-4970-8A42-253E89B8F915}|..\\DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A264B52-440F-4970-8A42-253E89B8F915}|..\\DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\dal\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\services\\appointmentsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\services\\clientsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CD2AB42-413B-4A6D-B0D0-C5233697AD57}|..\\BLL\\MVC_BLL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\bll\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A264B52-440F-4970-8A42-253E89B8F915}|..\\DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\dal\\psychology_clinicdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A264B52-440F-4970-8A42-253E89B8F915}|..\\DAL\\DAL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\dal\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D4D92FB-B4D3-41D9-B25E-33ED9FA99CE4}|..\\PL\\PL.csproj|c:\\users\\user\\onedrive\\desktop\\projects\\psychology-clinic\\pl\\views\\shared\\_appointmentspartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataTableView.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Clients\\DataTableView.cshtml",
+              "RelativeDocumentMoniker": "..\\PL\\Views\\Clients\\DataTableView.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Clients\\DataTableView.cshtml",
+              "RelativeToolTip": "..\\PL\\Views\\Clients\\DataTableView.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T12:08:47.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StartUp.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\StartUp.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\StartUp.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\StartUp.cs",
+              "RelativeToolTip": "..\\DAL\\StartUp.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAADgvxoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_BillDetailsPartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Shared\\_BillDetailsPartialView.cshtml",
+              "RelativeDocumentMoniker": "..\\PL\\Views\\Shared\\_BillDetailsPartialView.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Shared\\_BillDetailsPartialView.cshtml",
+              "RelativeToolTip": "..\\PL\\Views\\Shared\\_BillDetailsPartialView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T08:33:55.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "..\\PL\\Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "..\\PL\\Controllers\\ClientsController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAzwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillingsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Controllers\\BillingsController.cs",
+              "RelativeDocumentMoniker": "..\\PL\\Controllers\\BillingsController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Controllers\\BillingsController.cs",
+              "RelativeToolTip": "..\\PL\\Controllers\\BillingsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T10:22:46.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "..\\PL\\Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "..\\PL\\Views\\Clients\\Index.cshtml",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T12:03:32.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAIwDoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Billing.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Models\\Billing.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Models\\Billing.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Models\\Billing.cs",
+              "RelativeToolTip": "..\\BLL\\Models\\Billing.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA6wBsAAACmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T11:40:14.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Models\\Client.cs",
+              "RelativeToolTip": "..\\BLL\\Models\\Client.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T11:46:56.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TreatmentTest.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\MVC_Test\\TreatmentTest.cs",
+              "RelativeDocumentMoniker": "..\\MVC_Test\\TreatmentTest.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\MVC_Test\\TreatmentTest.cs",
+              "RelativeToolTip": "..\\MVC_Test\\TreatmentTest.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA+wBsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppointmentsService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\AppointmentsService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\AppointmentsService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\AppointmentsService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\AppointmentsService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwOcAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BillingsService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\BillingsService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\BillingsService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\BillingsService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\BillingsService.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAmwKUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClientsService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\ClientsService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\ClientsService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\ClientsService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\ClientsService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAtwF0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\BaseService.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\BLL\\Services\\BaseService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\BaseService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBJwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Psychology_ClinicDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Psychology_ClinicDBContext.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Psychology_ClinicDBContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Psychology_ClinicDBContext.cs",
+              "RelativeToolTip": "..\\DAL\\Psychology_ClinicDBContext.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Program.cs",
+              "RelativeDocumentMoniker": "..\\PL\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Program.cs",
+              "RelativeToolTip": "..\\PL\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Utils.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Utils.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\DAL\\Utils.cs",
+              "RelativeToolTip": "..\\DAL\\Utils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T08:33:55.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_AppointmentsPartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Shared\\_AppointmentsPartialView.cshtml",
+              "RelativeDocumentMoniker": "..\\PL\\Views\\Shared\\_AppointmentsPartialView.cshtml",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Projects\\Psychology-Clinic\\PL\\Views\\Shared\\_AppointmentsPartialView.cshtml",
+              "RelativeToolTip": "..\\PL\\Views\\Shared\\_AppointmentsPartialView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-13T08:33:55.683Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
