@@ -26,7 +26,7 @@ Welcome to the Psychology Clinic Management System project, designed to streamli
 
    ```bash
    git clone https://github.com/your-username/psychology-clinic-management.git
-   
+## Photos
 ![Screenshot 2023-11-14 171738](https://github.com/rexhens/Psychology-Clinic/assets/121065866/ef8d2767-b849-49e4-a241-d1eed69530e7)
 ![Screenshot 2023-11-14 171811](https://github.com/rexhens/Psychology-Clinic/assets/121065866/af4a01a8-ea3a-4da0-a84c-b54d3df3eca2)
 
